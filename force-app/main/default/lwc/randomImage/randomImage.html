@@ -1,0 +1,35 @@
+<template>
+    <article class="slds-card">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_5-of-12 slds-align_absolute-center">
+                <div class="slds-m-around_medium slds-box">
+                    <img
+                        src={image} />
+                </div>
+            </div>
+            <div class="slds-col slds-size_7-of-12">
+
+                <div class="slds-m-top_medium slds-m-bottom_medium slds-m-right_medium ">
+                    <div class="slds-grid slds-grid_vertical slds-m-bottom_large">
+                        <div class="slds-col">
+                            <lightning-icon icon-name="custom:custom1" alternative-text="Connected" size="medium"
+                                title="large size">
+                            </lightning-icon>
+                            <span class="slds-m-left_small slds-text-heading_medium">{numOfLikes} Likes</span>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-grid_vertical">
+                        <div class="slds-col">
+                            <span class="slds-text-heading_large">{photographerName}</span>
+                        </div>
+                        <div class="slds-col">
+                            <span class="slds-text-heading_small">
+                                <a href={portfolio}>{portfolio}</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</template>
